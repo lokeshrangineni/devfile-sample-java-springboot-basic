@@ -146,7 +146,7 @@ spec:
         workspace: workspace
       - name: basic-auth
         workspace: git-auth
-    - name: crda-scan
+    - name: clair-crda-scan
       description: CRDA tool Scans for static code vulneribilities.
       taskSpec:
         results:
