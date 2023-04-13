@@ -145,7 +145,7 @@ spec:
         workspace: workspace
       - name: basic-auth
         workspace: git-auth
-    - name: clair-scan1
+    - name: clair-scan
       description: CRDA tool Scans for static code vulneribilities.
       taskSpec:
         results:
@@ -311,7 +311,7 @@ spec:
       workspaces:
       - name: test-ws
         workspace: workspace
-    - name: clair-scan
+    - name: clair-scan-actual
       params:
       - name: image-digest
         value: $(tasks.build-container.results.IMAGE_DIGEST)
