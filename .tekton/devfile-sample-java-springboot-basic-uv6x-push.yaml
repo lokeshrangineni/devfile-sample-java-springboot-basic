@@ -311,7 +311,7 @@ spec:
       workspaces:
       - name: test-ws
         workspace: workspace
-    - name: clair-scan-actual
+    - name: clair-scan-act
       params:
       - name: image-digest
         value: $(tasks.build-container.results.IMAGE_DIGEST)
