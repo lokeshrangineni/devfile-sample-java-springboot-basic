@@ -145,7 +145,7 @@ spec:
         workspace: workspace
       - name: basic-auth
         workspace: git-auth
-    - name: crda-scan
+    - name: clair-crda-scan
       description: CRDA tool Scans for static code vulneribilities.
       taskSpec:
         results:
@@ -156,7 +156,7 @@ spec:
         workspaces:
           - name: source
         steps:
-          - name: run-redhat-crda-scan-step
+          - name: run-redhat-clair-crda-scan-step
             image: quay.io/lrangine/crda-maven:11.0
             workingDir: "$(workspaces.source.path)"
             env:
