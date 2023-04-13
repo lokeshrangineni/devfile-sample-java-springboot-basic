@@ -156,7 +156,7 @@ spec:
         workspaces:
           - name: source
         steps:
-          - name: run-redhat-crda-scan-step
+          - name: run-redhat-clair-crda-scan-step
             image: quay.io/lrangine/crda-maven:11.0
             workingDir: "$(workspaces.source.path)"
             env:
